@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="| 5 | Prueba5 |" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-11-19T03:22:30" hostname="DESKTOP-4RDBK1J" time="2.52">
+  <properties/>
+  <testcase name="Given url 'https://petstore.swagger.io/v2/pet'" classname="| 5 | Prueba5 |" time="0.0"/>
+  <testcase name="And request {&quot;id&quot;: 5, &quot;category&quot;: { &quot;id&quot;: 5, &quot;name&quot;: Prueba5 }, &quot;name&quot;: Prueba5, &quot;photoUrls&quot;: [ &quot;string&quot; ], &quot;tags&quot;: [ { &quot;id&quot;: 0, &quot;name&quot;: &quot;string&quot; }  ], &quot;status&quot;: &quot;available&quot; }" classname="| 5 | Prueba5 |" time="0.0"/>
+  <testcase name="When method post" classname="| 5 | Prueba5 |" time="0.0"/>
+  <testcase name="Then status 200" classname="| 5 | Prueba5 |" time="0.0"/>
+  <testcase name="* match response == {&quot;id&quot;: 5, &quot;category&quot;: { &quot;id&quot;: 5, &quot;name&quot;: Prueba5 }, &quot;name&quot;: Prueba5, &quot;photoUrls&quot;: [ &quot;string&quot; ], &quot;tags&quot;: [ { &quot;id&quot;: 0, &quot;name&quot;: &quot;string&quot; }  ], &quot;status&quot;: &quot;available&quot; }" classname="| 5 | Prueba5 |" time="0.0"/>
+  <testcase name="classMethod" classname="| 5 | Prueba5 |" time="2.345"/>
+  <testcase name="Given url 'https://petstore.swagger.io/v2/pet/5'" classname="| 5 | Prueba5 |" time="0.0"/>
+  <testcase name="When method get" classname="| 5 | Prueba5 |" time="0.0"/>
+  <testcase name="Then status 200" classname="| 5 | Prueba5 |" time="0.0"/>
+  <testcase name="* match response == { &quot;id&quot;: 5, &quot;category&quot;: { &quot;id&quot;: 5, &quot;name&quot;: Prueba5 }, &quot;name&quot;: Prueba5, &quot;photoUrls&quot;: [ &quot;string&quot; ], &quot;tags&quot;: [ { &quot;id&quot;: 0, &quot;name&quot;: &quot;string&quot; } ], &quot;status&quot;: &quot;available&quot; }" classname="| 5 | Prueba5 |" time="0.0"/>
+  <testcase name="classMethod" classname="| 5 | Prueba5 |" time="0.652"/>
+  <system-out><![CDATA[22:22:30.349 [Test worker] WARN com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+22:22:32.227 [Test worker] WARN com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

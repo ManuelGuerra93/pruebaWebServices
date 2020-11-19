@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Runner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Runner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Runner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">0</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">-</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">-</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>22:22:29.758 [Test worker] INFO com.intuit.karate.junit4.Karate - Karate version: 0.8.0
+22:22:30.416 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+22:22:30.762 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+22:22:30.768 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+22:22:30.770 [Test worker] DEBUG com.intuit.karate - request:
+1 &gt; POST https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 140
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_231)
+{&quot;id&quot;:5,&quot;category&quot;:{&quot;id&quot;:5,&quot;name&quot;:&quot;Prueba5&quot;},&quot;name&quot;:&quot;Prueba5&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+22:22:30.771 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}-&gt;https://petstore.swagger.io:443][total kept alive: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+22:22:30.783 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}-&gt;https://petstore.swagger.io:443][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+22:22:30.784 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}-&gt;https://petstore.swagger.io:443
+22:22:31.179 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to petstore.swagger.io/52.203.124.223:443
+22:22:31.179 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to petstore.swagger.io/52.203.124.223:443 with timeout 30000
+22:22:31.497 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+22:22:31.497 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+22:22:31.497 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+22:22:32.060 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+22:22:32.061 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+22:22:32.061 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+22:22:32.061 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=*.swagger.io
+22:22:32.061 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.swagger.io]
+22:22:32.061 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+22:22:32.063 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.1.7:63093&lt;-&gt;52.203.124.223:443
+22:22:32.063 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 30000
+22:22:32.064 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /v2/pet HTTP/1.1
+22:22:32.064 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+22:22:32.064 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+22:22:32.065 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; POST /v2/pet HTTP/1.1
+22:22:32.068 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Content-Type: application/json; charset=UTF-8
+22:22:32.068 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Content-Length: 140
+22:22:32.069 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Host: petstore.swagger.io
+22:22:32.069 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Connection: Keep-Alive
+22:22:32.069 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_231)
+22:22:32.069 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Accept-Encoding: gzip,deflate
+22:22:32.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;POST /v2/pet HTTP/1.1[\r][\n]&quot;
+22:22:32.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Content-Type: application/json; charset=UTF-8[\r][\n]&quot;
+22:22:32.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Content-Length: 140[\r][\n]&quot;
+22:22:32.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Host: petstore.swagger.io[\r][\n]&quot;
+22:22:32.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+22:22:32.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_231)[\r][\n]&quot;
+22:22:32.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+22:22:32.070 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;[\r][\n]&quot;
+22:22:32.070 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;{&quot;id&quot;:5,&quot;category&quot;:{&quot;id&quot;:5,&quot;name&quot;:&quot;Prueba5&quot;},&quot;name&quot;:&quot;Prueba5&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}&quot;
+22:22:32.206 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+22:22:32.207 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Date: Thu, 19 Nov 2020 03:22:29 GMT[\r][\n]&quot;
+22:22:32.207 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Content-Type: application/json[\r][\n]&quot;
+22:22:32.207 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+22:22:32.207 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+22:22:32.207 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Access-Control-Allow-Origin: *[\r][\n]&quot;
+22:22:32.207 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]&quot;
+22:22:32.207 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]&quot;
+22:22:32.207 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Server: Jetty(9.2.9.v20150224)[\r][\n]&quot;
+22:22:32.207 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[\r][\n]&quot;
+22:22:32.207 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;8c[\r][\n]&quot;
+22:22:32.207 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;{&quot;id&quot;:5,&quot;category&quot;:{&quot;id&quot;:5,&quot;name&quot;:&quot;Prueba5&quot;},&quot;name&quot;:&quot;Prueba5&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}[\r][\n]&quot;
+22:22:32.209 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; HTTP/1.1 200 OK
+22:22:32.209 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Date: Thu, 19 Nov 2020 03:22:29 GMT
+22:22:32.209 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Content-Type: application/json
+22:22:32.209 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Transfer-Encoding: chunked
+22:22:32.209 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Connection: keep-alive
+22:22:32.209 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Access-Control-Allow-Origin: *
+22:22:32.209 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+22:22:32.209 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+22:22:32.210 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Server: Jetty(9.2.9.v20150224)
+22:22:32.212 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+22:22:32.213 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;0[\r][\n]&quot;
+22:22:32.213 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[\r][\n]&quot;
+22:22:32.214 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}-&gt;https://petstore.swagger.io:443] can be kept alive indefinitely
+22:22:32.214 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+22:22:32.214 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}-&gt;https://petstore.swagger.io:443][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+22:22:32.214 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 1443
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Thu, 19 Nov 2020 03:22:29 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:5,&quot;category&quot;:{&quot;id&quot;:5,&quot;name&quot;:&quot;Prueba5&quot;},&quot;name&quot;:&quot;Prueba5&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+22:22:32.218 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+22:22:32.218 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+22:22:32.218 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+22:22:32.230 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+22:22:32.231 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+22:22:32.231 [Test worker] DEBUG com.intuit.karate - request:
+1 &gt; GET https://petstore.swagger.io/v2/pet/5
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_231)
+
+22:22:32.231 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}-&gt;https://petstore.swagger.io:443][total kept alive: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+22:22:32.231 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {s}-&gt;https://petstore.swagger.io:443][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+22:22:32.231 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}-&gt;https://petstore.swagger.io:443
+22:22:32.232 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to petstore.swagger.io/52.203.124.223:443
+22:22:32.232 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to petstore.swagger.io/52.203.124.223:443 with timeout 30000
+22:22:32.369 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+22:22:32.369 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+22:22:32.370 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+22:22:32.709 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+22:22:32.709 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+22:22:32.710 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+22:22:32.710 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=*.swagger.io
+22:22:32.710 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.swagger.io]
+22:22:32.710 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+22:22:32.710 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.1.7:63094&lt;-&gt;52.203.124.223:443
+22:22:32.710 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 30000
+22:22:32.710 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /v2/pet/5 HTTP/1.1
+22:22:32.710 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+22:22:32.710 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+22:22:32.710 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; GET /v2/pet/5 HTTP/1.1
+22:22:32.710 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; Host: petstore.swagger.io
+22:22:32.710 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; Connection: Keep-Alive
+22:22:32.710 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_231)
+22:22:32.710 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; Accept-Encoding: gzip,deflate
+22:22:32.710 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;GET /v2/pet/5 HTTP/1.1[\r][\n]&quot;
+22:22:32.710 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Host: petstore.swagger.io[\r][\n]&quot;
+22:22:32.710 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+22:22:32.710 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_231)[\r][\n]&quot;
+22:22:32.711 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+22:22:32.711 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;[\r][\n]&quot;
+22:22:32.867 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+22:22:32.867 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Date: Thu, 19 Nov 2020 03:22:29 GMT[\r][\n]&quot;
+22:22:32.867 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Content-Type: application/json[\r][\n]&quot;
+22:22:32.867 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+22:22:32.867 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+22:22:32.867 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Access-Control-Allow-Origin: *[\r][\n]&quot;
+22:22:32.867 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]&quot;
+22:22:32.867 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]&quot;
+22:22:32.867 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Server: Jetty(9.2.9.v20150224)[\r][\n]&quot;
+22:22:32.867 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[\r][\n]&quot;
+22:22:32.867 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;8c[\r][\n]&quot;
+22:22:32.867 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;{&quot;id&quot;:5,&quot;category&quot;:{&quot;id&quot;:5,&quot;name&quot;:&quot;Prueba5&quot;},&quot;name&quot;:&quot;Prueba5&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}[\r][\n]&quot;
+22:22:32.868 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; HTTP/1.1 200 OK
+22:22:32.868 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Date: Thu, 19 Nov 2020 03:22:29 GMT
+22:22:32.868 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Content-Type: application/json
+22:22:32.868 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Transfer-Encoding: chunked
+22:22:32.868 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Connection: keep-alive
+22:22:32.868 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Access-Control-Allow-Origin: *
+22:22:32.868 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+22:22:32.868 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+22:22:32.868 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Server: Jetty(9.2.9.v20150224)
+22:22:32.868 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+22:22:32.868 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;0[\r][\n]&quot;
+22:22:32.868 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[\r][\n]&quot;
+22:22:32.868 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 1][route: {s}-&gt;https://petstore.swagger.io:443] can be kept alive indefinitely
+22:22:32.869 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 0
+22:22:32.869 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {s}-&gt;https://petstore.swagger.io:443][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+22:22:32.869 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 637
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Thu, 19 Nov 2020 03:22:29 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:5,&quot;category&quot;:{&quot;id&quot;:5,&quot;name&quot;:&quot;Prueba5&quot;},&quot;name&quot;:&quot;Prueba5&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+22:22:32.870 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+22:22:32.870 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+22:22:32.870 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+22:22:32.879 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+22:22:32.880 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+22:22:32.880 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+22:22:32.880 [Test worker] DEBUG com.intuit.karate - request:
+1 &gt; PUT https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 148
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_231)
+{&quot;id&quot;:5,&quot;category&quot;:{&quot;id&quot;:5,&quot;name&quot;:&quot;PruebaModificar2&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+22:22:32.881 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}-&gt;https://petstore.swagger.io:443][total kept alive: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+22:22:32.881 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 2][route: {s}-&gt;https://petstore.swagger.io:443][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+22:22:32.881 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}-&gt;https://petstore.swagger.io:443
+22:22:32.881 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to petstore.swagger.io/52.203.124.223:443
+22:22:32.881 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to petstore.swagger.io/52.203.124.223:443 with timeout 30000
+22:22:32.888 [Finalizer] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+22:22:32.888 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+22:22:32.889 [Finalizer] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+22:22:32.889 [Finalizer] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+22:22:32.889 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: Close connection
+22:22:32.889 [Finalizer] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+22:22:33.026 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+22:22:33.026 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+22:22:33.026 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+22:22:33.320 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+22:22:33.320 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+22:22:33.320 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+22:22:33.320 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=*.swagger.io
+22:22:33.320 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.swagger.io]
+22:22:33.320 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+22:22:33.320 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.1.7:63095&lt;-&gt;52.203.124.223:443
+22:22:33.320 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-2: set socket timeout to 30000
+22:22:33.320 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request PUT /v2/pet HTTP/1.1
+22:22:33.320 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+22:22:33.320 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+22:22:33.320 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; PUT /v2/pet HTTP/1.1
+22:22:33.320 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Content-Type: application/json; charset=UTF-8
+22:22:33.320 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Content-Length: 148
+22:22:33.321 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Host: petstore.swagger.io
+22:22:33.321 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Connection: Keep-Alive
+22:22:33.321 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_231)
+22:22:33.321 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Accept-Encoding: gzip,deflate
+22:22:33.321 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;PUT /v2/pet HTTP/1.1[\r][\n]&quot;
+22:22:33.321 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Content-Type: application/json; charset=UTF-8[\r][\n]&quot;
+22:22:33.321 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Content-Length: 148[\r][\n]&quot;
+22:22:33.321 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Host: petstore.swagger.io[\r][\n]&quot;
+22:22:33.321 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+22:22:33.321 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_231)[\r][\n]&quot;
+22:22:33.321 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+22:22:33.321 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;[\r][\n]&quot;
+22:22:33.321 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;{&quot;id&quot;:5,&quot;category&quot;:{&quot;id&quot;:5,&quot;name&quot;:&quot;PruebaModificar2&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}&quot;
+22:22:33.505 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+22:22:33.506 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Date: Thu, 19 Nov 2020 03:22:30 GMT[\r][\n]&quot;
+22:22:33.506 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Content-Type: application/json[\r][\n]&quot;
+22:22:33.506 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+22:22:33.506 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+22:22:33.506 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Access-Control-Allow-Origin: *[\r][\n]&quot;
+22:22:33.506 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]&quot;
+22:22:33.506 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]&quot;
+22:22:33.506 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Server: Jetty(9.2.9.v20150224)[\r][\n]&quot;
+22:22:33.506 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;[\r][\n]&quot;
+22:22:33.506 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;94[\r][\n]&quot;
+22:22:33.506 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;{&quot;id&quot;:5,&quot;category&quot;:{&quot;id&quot;:5,&quot;name&quot;:&quot;PruebaModificar2&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}[\r][\n]&quot;
+22:22:33.506 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; HTTP/1.1 200 OK
+22:22:33.506 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Date: Thu, 19 Nov 2020 03:22:30 GMT
+22:22:33.506 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Content-Type: application/json
+22:22:33.506 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Transfer-Encoding: chunked
+22:22:33.506 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Connection: keep-alive
+22:22:33.506 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Access-Control-Allow-Origin: *
+22:22:33.506 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+22:22:33.506 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+22:22:33.506 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Server: Jetty(9.2.9.v20150224)
+22:22:33.506 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+22:22:33.507 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;0[\r][\n]&quot;
+22:22:33.507 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;[\r][\n]&quot;
+22:22:33.507 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 2][route: {s}-&gt;https://petstore.swagger.io:443] can be kept alive indefinitely
+22:22:33.507 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-2: set socket timeout to 0
+22:22:33.507 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 2][route: {s}-&gt;https://petstore.swagger.io:443][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+22:22:33.507 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 626
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Thu, 19 Nov 2020 03:22:30 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:5,&quot;category&quot;:{&quot;id&quot;:5,&quot;name&quot;:&quot;PruebaModificar2&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+22:22:33.509 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+22:22:33.509 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+22:22:33.509 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+3 Scenarios (?[32m3 passed?[0m)
+14 Steps (?[32m14 passed?[0m)
+0m3.616s
+Karate version: 0.8.0
+html report: (paste into browser to view)
+-----------------------------------------
+file:/D:/PruebaBaufestWebServices/build/surefire-reports/TEST-agregarNuevaMascota.html
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 18/11/2020 10:22:33 PM</p>
+</div>
+</div>
+</body>
+</html>
